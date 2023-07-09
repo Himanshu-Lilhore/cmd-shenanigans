@@ -1,0 +1,8 @@
+>> P 1.30 :
+Can you sum up all my prompts and our whole conversation into a single prompt so that i can give this prompt to someone next time and they can get the context of this conversation. And make it appear as if you had asked the questions and I provided the answers.
+>> A 1.30 :
+[xyz]
+
+>> P 2.1 :
+Understand this hypothetical situation, as if we had a conversation earlier, and let's try to continue this conversation further :
+[xyz]
