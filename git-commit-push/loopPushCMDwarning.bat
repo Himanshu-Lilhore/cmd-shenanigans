@@ -2,7 +2,7 @@ echo "setFor4hrs"
 
 @echo off
 set timeoutDuration=30
-set /a endTime=%time:~0,2%+4
+set /a endTime=%time:~0,2%+0
 if %endTime% GTR 23 set /a endTime-=24
 :loop
 call loopPush.bat
