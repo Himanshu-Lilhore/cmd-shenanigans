@@ -1,6 +1,6 @@
 Dim shell, result
 Set shell = CreateObject("WScript.Shell")
-result = shell.Popup("Do you want to continue?", 0, "Title", vbYesNo + vbQuestion)
+result = shell.Popup("Time's up!\nGit-commit-push script has ended\nDo you want to rerun the script?", 0, "Title", vbYesNo + vbQuestion)
 If result = vbYes Then
     WScript.Echo "yes"
 Else
