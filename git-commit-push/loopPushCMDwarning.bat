@@ -9,4 +9,5 @@ set /a count+=1
 if %count%==%iterations% goto endloop
 goto loop
 :endloop
+chcp 437
 start cmd /k "color 4F & echo ┌────────────────────────────────────────────┐ & echo │                                            │ & echo │ Warning: The script has ended.             │ & echo │ Please restart it if you want to continue  │ & echo │ monitoring the repository for changes.     │ & echo │                                            │ & echo └────────────────────────────────────────────┘"
