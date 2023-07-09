@@ -7,4 +7,4 @@ set /a count+=1
 if %count%==2 goto endloop
 goto loop
 :endloop
-msg * "Warning: The script is about to end. Please restart it if you want to continue monitoring the repository for changes."
+start cmd /k "color 4F & echo ┌────────────────────────────────────────────┐ & echo │                                            │ & echo │ Warning: The script has ended.             │ & echo │ Please restart it if you want to continue  │ & echo │ monitoring the repository for changes.     │ & echo │                                            │ & echo └────────────────────────────────────────────┘"
