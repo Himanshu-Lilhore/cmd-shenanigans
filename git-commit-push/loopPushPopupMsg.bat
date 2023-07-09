@@ -1,8 +1,8 @@
 @echo off
 set /a count=0
 :loop
-timeout /t 10
 call loopPush.bat
+timeout /t 10
 set /a count+=1
 if %count%==2 goto endloop
 goto loop
