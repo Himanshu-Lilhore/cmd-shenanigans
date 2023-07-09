@@ -1,2 +1,2 @@
 # cmd-shenanigans
-Learning do all sorts of things in cmd commands
+Learning to do all sorts of things in cmd commands
