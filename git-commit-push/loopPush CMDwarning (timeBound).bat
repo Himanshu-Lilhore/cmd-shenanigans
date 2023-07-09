@@ -14,12 +14,12 @@ if %time:~0,2% GEQ %endTime% goto endloop
 goto loop
 
 :endloop
-start cmd /c "color 4F & echo Warning: The script has ended. Please restart it if you want to continue monitoring the repository for changes. & pause"
+start "Warning" cmd /c "color 4F & echo Warning: The script has ended. Please restart it if you want to continue monitoring the repository for changes. & pause"
 for /f "delims=" %%a in ('cscript //nologo ask.vbs') do set result=%%a
 if "%result%" == "yes" (
-    taskkill /f /im cmd.exe /fi "windowtitle eq C:\Windows\system32\cmd.exe"
+    taskkill /f /fi "windowtitle eq Warning"
     goto startloop
 ) else (
-    taskkill /f /im cmd.exe /fi "windowtitle eq C:\Windows\system32\cmd.exe"
+    taskkill /f /fi "windowtitle eq Warning"
     exit
 )
